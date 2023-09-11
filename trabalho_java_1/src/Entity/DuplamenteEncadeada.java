@@ -105,7 +105,9 @@ public class DuplamenteEncadeada<T> {
 
 
     //Exemplo----------------------------------------------------------
-    public static void Exemplo(){
+    public void exemplo(){
+
+        System.out.println("===========================\n   DUPLAMENTE ENCADEADA \n===========================");
 
         DuplamenteEncadeada<Integer> lista = new DuplamenteEncadeada<>();
 
@@ -117,6 +119,7 @@ public class DuplamenteEncadeada<T> {
         lista.delete(2); // [0, 1, 3] (-2)
         lista.mostrarLista(); // Deve imprimir: 0 1 3
 
+        System.out.println("\n\n\n");
     }
 
 }

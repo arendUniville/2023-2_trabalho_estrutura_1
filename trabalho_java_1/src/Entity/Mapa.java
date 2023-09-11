@@ -13,7 +13,7 @@ public class Mapa<K, V> {
 
 
 
-
+//Métodos---------------------------------------------------------------
     // Adicionar um par mapNode ao mapa
     public void put(K key, V value) {
         MapNode<K, V> pair = new MapNode<>(key, value);
@@ -82,8 +82,10 @@ public class Mapa<K, V> {
 
 
 
+//Amostragem--------------------------------------------------------------
+
     // Método para imprimir o mapa
-    public void printMap() {
+    public void mostrarMapa() {
 
         Node<MapNode<K, V>> current = lista.getHead();
 
@@ -96,5 +98,37 @@ public class Mapa<K, V> {
 
         }
     }
+
+
+//Exemplo
+
+    public void examplo(){
+
+        System.out.println("=================\n      MAPA \n=================");
+
+        Mapa<String, Integer> mapa= new Mapa<>();
+        mapa.put("Valor1", 1);
+        mapa.put("Valor2", 2);
+        mapa.put("Valor3", 3);
+
+
+        //Mostrando mapa
+        System.out.println("\nValores do mapa:");
+        mapa.mostrarMapa();
+
+        //Mostrando valor da chave 2
+        System.out.println("Valor 2: " + mapa.get("Valor2"));
+
+
+        //Removendo chave 1
+        mapa.remove("Valor1");
+
+        //Mostrando mapa novamente
+        System.out.println("\nRemovido 'Valor1':");
+        mapa.mostrarMapa();
+
+        System.out.println("\n\n\n");
+    }
+
 
 }
