@@ -76,7 +76,17 @@ public class DuplamenteEncadeada<T> {
 
 
 
-    //Amostragem
+    //Amostragem----------------------------------------------------------
+    // Método para obter o nó da cabeça (head) da lista
+    public Node<T> getHead() {
+        return head;
+    }
+
+    // Método para obter o nó da cauda (tail) da lista
+    public Node<T> getTail() {
+        return tail;
+    }
+
 
     public void mostrarLista() {
 
@@ -91,5 +101,22 @@ public class DuplamenteEncadeada<T> {
     }
 
 
+
+
+
+    //Exemplo----------------------------------------------------------
+    public static void Exemplo(){
+
+        DuplamenteEncadeada<Integer> lista = new DuplamenteEncadeada<>();
+
+        lista.append(1); // [1] (+1)
+        lista.append(2); // [1,2] (+2)
+        lista.append(3); // [1,2,3] (+3)
+        lista.prepend(0); // [0, 1, 2, 3] (+0)
+        lista.mostrarLista(); // Deve imprimir: 0 1 2 3
+        lista.delete(2); // [0, 1, 3] (-2)
+        lista.mostrarLista(); // Deve imprimir: 0 1 3
+
+    }
 
 }
