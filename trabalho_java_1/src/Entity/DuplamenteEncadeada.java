@@ -1,9 +1,9 @@
 package Entity;
 
-public class DuplamenteEncadeada {
+public class DuplamenteEncadeada<T> {
 
-    private Node head;
-    private Node tail;
+    private Node<T> head;
+    private Node<T> tail;
 
 
     public DuplamenteEncadeada() {
@@ -14,9 +14,9 @@ public class DuplamenteEncadeada {
 
 
     //Add no início
-    public void prepend(int data) {
+    public void prepend(T data) {
 
-        Node newNode = new Node(data);
+        Node<T> newNode = new Node<>(data);
 
         if (head == null) {
             head = newNode;
@@ -31,9 +31,9 @@ public class DuplamenteEncadeada {
 
 
     //Add no final
-    public void append(int data) {
+    public void append(T data) {
 
-        Node newNode = new Node(data);
+        Node<T> newNode = new Node<>(data);
 
         if (head == null) {
             head = newNode;
@@ -48,9 +48,9 @@ public class DuplamenteEncadeada {
 
 
     //Remove
-    public void delete(int data) {
+    public void delete(T data) {
 
-        Node atual = head;
+        Node<T> atual = head;
 
         while (atual != null) {
 
@@ -80,7 +80,7 @@ public class DuplamenteEncadeada {
 
     public void mostrarLista() {
 
-        Node atual = head;
+        Node<T> atual = head;
 
         while (atual != null) {
             System.out.print(atual.Data + " ");

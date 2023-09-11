@@ -1,15 +1,15 @@
 package Entity;
 
-public class Node {
+public class Node<T> {
 
-    int Data;
-    Node prev;
-    Node next;
+    T Data;
+    Node<T> next;
+    Node<T> prev;
 
 
-    public Node(int data) {
+    public Node(T data) {
         Data = data;
-        this.prev = null;
         this.next = null;
+        this.prev = null;
     }
 }
