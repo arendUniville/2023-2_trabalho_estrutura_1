@@ -56,7 +56,5 @@ public class MapaTest {
         mapa.put("Chave1", 42);
         mapa.put("Chave2", 100);
 
-        mapa.mostrarMapa();
-        // Você pode adicionar verificações aqui para verificar a saída impressa no console
-    }
+        mapa.mostrarMapa();    }
 }
