@@ -1,3 +1,6 @@
+package Entity;
+
+import Entity.Mapa;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
