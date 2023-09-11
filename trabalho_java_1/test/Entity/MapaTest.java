@@ -56,5 +56,6 @@ public class MapaTest {
         mapa.put("Chave1", 42);
         mapa.put("Chave2", 100);
 
-        mapa.mostrarMapa();    }
+        mapa.mostrarMapa();
+    }
 }
